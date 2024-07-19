@@ -41,7 +41,7 @@ function Add_Chief_warden() {
       user_name
     ) {
       axios
-        .post("http://localhost:3000/admin/addchiefwarden", data,{
+        .post("https://messwebapp-2.onrender.com/admin/addchiefwarden", data,{
           headers: {
             Authorization: `Bearer ${token}`,
           },
