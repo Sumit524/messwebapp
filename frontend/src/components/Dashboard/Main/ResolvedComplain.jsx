@@ -74,7 +74,7 @@ const Student_complaints = () => {
               </p>
               {complaint.images && (
                 <img
-                  src={`http://localhost:3000/uploads/${complaint.images}`}
+                  src={`https://messwebapp-2.onrender.com/uploads/${complaint.images}`}
                   alt="Complaint"
                   style={{ maxWidth: "300px" }}
                 />
