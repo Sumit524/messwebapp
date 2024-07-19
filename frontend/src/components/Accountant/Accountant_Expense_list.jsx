@@ -36,7 +36,7 @@ function ExpensePlanner() {
 
   const fetchData = async (year) => {
     try {
-      const response = await axios.get("http://localhost:3000/messExpense/fetch", {
+      const response = await axios.get("https://messwebapp-2.onrender.com/messExpense/fetch", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
