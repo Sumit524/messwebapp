@@ -46,7 +46,7 @@ function Signup() {
   
     if (college_gmail_id && registration_no && hostelname && password && user_name) {
       try {
-        const response = await axios.post("http://localhost:3000/api/auth/signup", data);
+        const response = await axios.post("https://messwebapp-2.onrender.com/api/auth/signup", data);
         toast(response.data.message);
         setData({
           college_gmail_id: "",
