@@ -16,7 +16,7 @@ const App = () => {
 
   useEffect(() => {
     // Fetch user's rating from the backend
-    axios.get('http://localhost:3000/api/ratings/fetch/user', { headers: { Authorization: `Bearer ${token}` } })
+    axios.get('https://messwebapp-2.onrender.com/api/ratings/fetch/user', { headers: { Authorization: `Bearer ${token}` } })
       .then((response) => {
         setUserRating(response.data);
         setCurrentRating(response.data);
@@ -25,7 +25,7 @@ const App = () => {
         console.error('There was an error fetching the user\'s rating!', error);
       });
 
-    axios.get('http://localhost:3000/api/ratings/fetch', { headers: { Authorization: `Bearer ${token}` } })
+    axios.get('https://messwebapp-2.onrender.com/api/ratings/fetch', { headers: { Authorization: `Bearer ${token}` } })
       .then((response) => {
         console.log(response.data)
         setRatings(response.data.length > 0 ? response.data : null);
@@ -44,7 +44,7 @@ const App = () => {
     } else {
       const currentDay = new Date().toLocaleDateString('en-US', { weekday: 'long' });
 
-      axios.post('http://localhost:3000/api/ratings/submit', { rating: currentRating }, { headers: { Authorization: `Bearer ${token}` } })
+      axios.post('https://messwebapp-2.onrender.com/api/ratings/submit', { rating: currentRating }, { headers: { Authorization: `Bearer ${token}` } })
         .then((response) => {
           console.log("submitted", response.data);
           const updatedRatings = [...ratings];
