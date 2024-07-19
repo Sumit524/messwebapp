@@ -54,7 +54,7 @@ function MealPlanner() {
   const fetchData = async (hostel) => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/messMenu/fetch1",
+        "https://messwebapp-2.onrender.com/messMenu/fetch1",
         {
           params: { hostel: hostel },
           headers: {
@@ -98,7 +98,7 @@ function MealPlanner() {
       const { m1, m2, m3, m4, special, mealType, day } = editedValues;
       const hostel = selectedHostel;
       const response = await axios.put(
-        "http://localhost:3000/messMenu/update",
+        "https://messwebapp-2.onrender.com/messMenu/update",
         { m1, m2, m3, m4, special, mealType, day, hostel },
         {
           headers: {
