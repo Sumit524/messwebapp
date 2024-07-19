@@ -76,7 +76,7 @@ function ExpensePlanner() {
       const { vegetables, fruits, provisions, others, month } = editedValues;
       console.log(editedValues);
       const response = await axios.put(
-        "http://localhost:3000/messExpense/update",
+        "https://messwebapp-2.onrender.com/messExpense/update",
         {
           vegetables,
           fruits,
