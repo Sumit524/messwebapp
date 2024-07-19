@@ -8,7 +8,7 @@ const Student_complaints = () => {
     const token = localStorage.getItem('token');
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/fetchcomplaints', {
+        axios.get('https://messwebapp-2.onrender.com/api/fetchcomplaints', {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -23,7 +23,7 @@ const Student_complaints = () => {
     }, [token]);
 
     const handleLike = (complaintId) => {
-        axios.put(`http://localhost:3000/api/${complaintId}/liked`, null, {
+        axios.put(`https://messwebapp-2.onrender.com/api/${complaintId}/liked`, null, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -43,7 +43,7 @@ const Student_complaints = () => {
     };
 
     const handleDislike = (complaintId) => {
-        axios.put(`http://localhost:3000/api/${complaintId}/disliked`, null, {
+        axios.put(`https://messwebapp-2.onrender.com/api/${complaintId}/disliked`, null, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -84,7 +84,7 @@ const Student_complaints = () => {
                             <p><b>Created at: </b>{new Date(complaint.createdAt).toLocaleString()}</p>
                             <p><b>Likes: </b>{complaint.likes}</p>
                             <p><b>Dislike: </b>{complaint.dislikes}</p>
-                            {complaint.images && <img src={`http://localhost:3000/uploads/${complaint.images}`} alt="Complaint" style={{ maxWidth: '300px' }} />}
+                            {complaint.images && <img src={`https://messwebapp-2.onrender.com/uploads/${complaint.images}`} alt="Complaint" style={{ maxWidth: '300px' }} />}
                             <div className="like-dislike-buttons">
                                 <button onClick={() => handleLike(complaint._id)}>
                                     Like
