@@ -14,7 +14,7 @@ function MainDash() {
   }, []); // Fetch data on component mount
 
   const fetchUserData = (token) => {
-    fetch('http://localhost:3000/api/auth/user', {
+    fetch('https://messwebapp-2.onrender.com/api/auth/user', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`
