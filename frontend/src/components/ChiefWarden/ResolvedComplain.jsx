@@ -7,7 +7,7 @@ const Student_complaints = () => {
     const token = localStorage.getItem('token');
     useEffect(() => {
       // Fetch complaints data from the backend when the component mounts
-      axios.get('http://localhost:3000/api/fetchcomplaints',{
+      axios.get('https://messwebapp-2.onrender.com/api/fetchcomplaints',{
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,7 +46,7 @@ const Student_complaints = () => {
               <p><b>Dislike: </b>{complaint.dislikes}</p>
               <p><b>FileName: </b>{complaint.images}</p>
               <p><b>ResolvedAt: </b>{new Date(complaint.resolvedAt).toLocaleString()}</p>
-              {complaint.images && <img src={`http://localhost:3000/uploads/${complaint.images}`} alt="Complaint" style={{ maxWidth: '300px' }} />}
+              {complaint.images && <img src={`https://messwebapp-2.onrender.com/uploads/${complaint.images}`} alt="Complaint" style={{ maxWidth: '300px' }} />}
             </li>
           ))}
         </ul>
