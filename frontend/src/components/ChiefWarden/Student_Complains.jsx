@@ -11,7 +11,7 @@ const Chief_Student_complaints = () => {
 
     useEffect(() => {
       // Fetch complaints data from the backend when the component mounts
-      axios.get('http://localhost:3000/api/fetchcomplaints',{
+      axios.get('https://messwebapp-2.onrender.com/api/fetchcomplaints',{
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -27,7 +27,7 @@ const Chief_Student_complaints = () => {
 
 
     const resolveComplaint = (complaintId) => {
-      axios.put(`http://localhost:3000/api/${complaintId}/resolved`,null,{
+      axios.put(`https://messwebapp-2.onrender.com/api/${complaintId}/resolved`,null,{
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -71,7 +71,7 @@ const Chief_Student_complaints = () => {
               <p><b>Created at: </b>{new Date(complaint.createdAt).toLocaleString()}</p>
               <p><b>Likes: </b>{complaint.likes}</p>
               <p><b>Dislike: </b>{complaint.dislikes}</p>
-              {complaint.images && <img src={`http://localhost:3000/uploads/${complaint.images}`} alt="Complaint" style={{ maxWidth: '300px' }} />}
+              {complaint.images && <img src={`https://messwebapp-2.onrender.com/uploads/${complaint.images}`} alt="Complaint" style={{ maxWidth: '300px' }} />}
               <button onClick={() => resolveComplaint(complaint._id)}>
                 Resolve
               </button>
