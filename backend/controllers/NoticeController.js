@@ -55,7 +55,7 @@ const getNotices = (req, res) => {
 
     return {
       name: file,
-      url: `http://localhost:3000/uploads_Notice/${file}`,
+      url: `https://messwebapp-2.onrender.com/uploads_Notice/${file}`,
       timestamp: stat.mtime, // Include the timestamp
     };
   });
