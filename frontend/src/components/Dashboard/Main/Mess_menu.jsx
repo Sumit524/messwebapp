@@ -26,7 +26,7 @@ function MealPlanner() {
   const fetchData = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:3000/messMenu/fetch", {
+      const response = await axios.get("https://messwebapp-2.onrender.com/messMenu/fetch", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
