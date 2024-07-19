@@ -13,7 +13,7 @@ function ResetPassword() {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post(`http://localhost:3000/api/reset-password/${id}/${token}`, {password})
+        axios.post(`https://messwebapp-2.onrender.com/api/reset-password/${id}/${token}`, {password})
         .then(res => {
             console.log(res)
             if(res.data.Status === "Success") {
