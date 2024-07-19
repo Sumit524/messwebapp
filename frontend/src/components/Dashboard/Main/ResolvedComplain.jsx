@@ -7,7 +7,7 @@ const Student_complaints = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/fetchcomplaints", {
+      .get("https://messwebapp-2.onrender.com/api/fetchcomplaints", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
