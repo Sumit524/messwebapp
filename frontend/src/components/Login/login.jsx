@@ -32,7 +32,7 @@ function Login() {
 		const { college_gmail_id, password, userrole } = data;
 	
 		if (college_gmail_id && password && userrole) {
-		  axios.post("http://localhost:3000/api/auth/login", data)
+		  axios.post("https://messwebapp-2.onrender.com/api/auth/login", data)
 			.then((res) => {
 			  const { token } = res.data;
 			  localStorage.setItem('token', token);
