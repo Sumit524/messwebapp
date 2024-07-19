@@ -10,7 +10,7 @@ function ForgotPassword() {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:3000/api/forgot", {email})
+        axios.post("https://messwebapp-2.onrender.com/api/forgot", {email})
         .then(res => {
           console.log(res)
             if(res.data.status === "Success") {
