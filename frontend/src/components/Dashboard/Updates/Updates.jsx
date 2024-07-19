@@ -5,7 +5,7 @@ function Update() {
   const [notices, setNotices] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/notices', {
+    fetch('https://messwebapp-2.onrender.com/notices', {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
       },
@@ -16,7 +16,7 @@ function Update() {
   }, []);
 
   function downloadFile(filename) {
-    fetch(`http://localhost:3000/downloads/${filename}`, {
+    fetch(`https://messwebapp-2.onrender.com/downloads/${filename}`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
       },
