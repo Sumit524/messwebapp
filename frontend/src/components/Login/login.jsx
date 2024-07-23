@@ -95,7 +95,7 @@ function Login() {
 							style={{fontWeight: "bold" }}
 						>
 							{/* If you are visiting portal first time  and facing any issue Please wait for 1-2 min  after Login. */}
-							If you are visiting the portal for the first time and facing any issue during Signup please wait for 1-2 minutes.
+							If you are visiting the portal for the first time and facing any issue during Login please wait for 1-2 minutes.
 						</h2>
 					</div>
 					<div className="text-white text-center mt-4" style={{fontFamily:"Agbalumo"}}>
