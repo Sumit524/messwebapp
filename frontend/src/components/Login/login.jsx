@@ -91,6 +91,15 @@ function Login() {
 				<div className="h-screen bg-neutral-800 w-1/2  flex-col  juendstify- rounded-r-lg flex justify-center items-center  " style={{fontFamily:"Agbalumo"}}>
 					<div className="text-white text-center" style={{fontFamily:"Agbalumo"}}>
 						<h2
+							className="text-1xl  "
+							style={{fontWeight: "bold" }}
+						>
+							{/* If you are visiting portal first time  and facing any issue Please wait for 1-2 min  after Login. */}
+							If you are visiting the portal for the first time and facing any issue please wait for 1-2 minutes after login.
+						</h2>
+					</div>
+					<div className="text-white text-center mt-4" style={{fontFamily:"Agbalumo"}}>
+						<h2
 							className="text-4xl  "
 							style={{fontWeight: "bold" }}
 						>
