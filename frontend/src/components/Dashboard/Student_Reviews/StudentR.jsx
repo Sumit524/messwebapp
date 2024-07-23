@@ -5,7 +5,7 @@ import './StudentR.css'; // Import the CSS file for styling
 import { toast } from 'react-toastify';
 import axios from 'axios';
 
-
+Rate us
 const App = () => {
   const [ratings, setRatings] = useState([]);
   const [ratingPage, setRatingPage] = useState(true);
@@ -151,7 +151,7 @@ const App = () => {
     <div className="app-container" style={{ fontFamily: "Agbalumo", borderWidth: "0.07rem", borderColor: "black" }}>
       {ratingPage ? (
         <div className="rate-us-container" style={{ background: 'linear-gradient(to right, pink, yellow, red)', borderWidth: "0.02rem", borderColor: "black" }}>
-        <h1 style={{ color: "white", borderRadius: "50px", borderWidth: "1.5px", borderColor: "black", height: "30px", display: "flex", justifyContent: "center", alignItems: "center", fontWeight: "bold", marginBottom: "30px", fontSize: "1.3rem" }}>Rate Us</h1>
+        <h1 style={{ color: "white", borderRadius: "50px", borderWidth: "1.5px", borderColor: "black", height: "30px", display: "flex", justifyContent: "center", alignItems: "center", fontWeight: "bold", marginBottom: "30px", fontSize: "1.3rem" }}>Rate Today's Meal</h1>
         <div className="stars-container">
           {[1, 2, 3, 4, 5].map((star) => (
             <span
