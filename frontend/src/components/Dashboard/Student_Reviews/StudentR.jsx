@@ -5,7 +5,7 @@ import './StudentR.css'; // Import the CSS file for styling
 import { toast } from 'react-toastify';
 import axios from 'axios';
 
-Rate us
+
 const App = () => {
   const [ratings, setRatings] = useState([]);
   const [ratingPage, setRatingPage] = useState(true);
